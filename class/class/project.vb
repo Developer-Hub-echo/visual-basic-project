@@ -2,7 +2,7 @@
 'importing the database preferences
 Public Class project
     Dim provider As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-    Dim datafile As String = "E:\school\vb code\class\studentdatabase.accdb"
+    Dim datafile As String = "|DataDirectory|\studentdatabase.accdb"
     Dim constring As String = provider & datafile
     Dim myconnection As OleDbConnection = New OleDbConnection
     Dim str As String

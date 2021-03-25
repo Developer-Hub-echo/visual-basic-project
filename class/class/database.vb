@@ -3,7 +3,8 @@
 Public Class database
 
     Dim provider As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source="
-    Dim datafile As String = "E:\school\vb code\class\studentdatabase.accdb"
+
+    Dim datafile As String = "|DataDirectory|\studentdatabase.accdb"
     Dim constring As String = provider & datafile
     Dim myconnection As OleDbConnection = New OleDbConnection
     Dim str As String
@@ -59,8 +60,7 @@ Public Class database
 
                 If (state = "valid") Then
 
-                    str = "Delete from students WHERE studentID = "
-
+                    str = "Delete from students WHERE studentID = " & CInt(deleteid.Text)
                     Dim cmd As OleDbCommand = New OleDbCommand(str, myconnection)
                     cmd.Connection = myconnection
                     cmd.CommandText = str
@@ -127,5 +127,10 @@ Public Class database
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub LinkLabel2_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        search.Show()
+
     End Sub
 End Class

@@ -22,3 +22,5 @@ E:\school\vb code\class\class\obj\Debug\class.Resources.resources
 E:\school\vb code\class\class\obj\Debug\class.vbproj.GenerateResource.Cache
 E:\school\vb code\class\class\bin\Debug\class.exe.config
 E:\school\vb code\class\class\obj\Debug\class.database.resources
+E:\school\vb code\class\class\obj\Debug\class.search.resources
+E:\school\vb code\class\class\bin\Debug\itextsharp.dll

@@ -28,6 +28,7 @@ Partial Class database
         Me.Label1 = New System.Windows.Forms.Label
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
         Me.Button1 = New System.Windows.Forms.Button
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
         CType(Me.DataGridmain, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -91,11 +92,23 @@ Partial Class database
         Me.Button1.Text = "Re-load Database"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.Location = New System.Drawing.Point(724, 385)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(165, 15)
+        Me.LinkLabel2.TabIndex = 6
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Search For A Student Record"
+        '
         'database
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(901, 512)
+        Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label1)
@@ -115,4 +128,5 @@ Partial Class database
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
 End Class
